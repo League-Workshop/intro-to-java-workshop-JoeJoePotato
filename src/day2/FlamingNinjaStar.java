@@ -31,7 +31,7 @@ bb8.move(64);
 			// 6. Turn the robot 170 degrees
 			bb8.turn(170);
 			// 7. Move the robot the distance in the variable flameSize (again)
-			bb8.move(2000);
+			bb8.move(200);
 			// 8. Turn the robot 64 degrees to the right
 			bb8.turn(64);
 			// 9. Move the robot the distance in the variable baseSize
