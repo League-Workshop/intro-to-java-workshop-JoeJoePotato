@@ -26,7 +26,8 @@ public class DragonFight {
 		// 7. Add a closing mustache at the very bottom of this program (since we just added an opening mustache on the previous step).
 		
 		// 8. Ask the player in a pop-up if they want to attack the dragon with a yell or a kick
-		String yk=JOptionPane.showInputDialog("would you like to attack by yelling or kicking?");
+		String yk=JOptionPane.showInputDialog("would you like to attack by yelling or kicking?"
+				+ "(type in either yell or kick)");
 		// 9. If they typed in "yell":
 		if(yk.equals("yell")) {
 			playerAttack = new Random().nextInt(10);
@@ -64,13 +65,20 @@ playerHealth=(playerHealth - dragonAttack);
 			JOptionPane.showMessageDialog(null,"the dragon's health: "+dragonHealth);
 		
 		}
-		if( dragonHealth<=0);{
-		JOptionPane.showMessageDialog(null,"You killed the dragon, took the gold, and become a legendary (and rich) hero."); }		
+		}
 		
- if(playerHealth==0 || playerHealth<0)
-		JOptionPane.showMessageDialog(null,"you are killed by the dragon. The dragon eats you as a snack the next day. GAME OVER.");}
+		if(playerHealth<=0 && dragonHealth<=0) { 
+			JOptionPane.showMessageDialog(null,"Both you and the dragon are destroyed by another, bigger dragon."); }else {}	
+		
+		
+		
+		
+ if(playerHealth<=0) {
+		JOptionPane.showMessageDialog(null,"you are killed by the dragon. The dragon eats you as a snack the next day. GAME OVER.");}else {
+			JOptionPane.showMessageDialog(null,"You killed the dragon, took the gold, and become a legendary (and rich) hero."); 	
+		}
 			//-- Tell the user that they lost
-}	
+	
 		
 		// 14. Else if the dragon's health is less than or equal to 0
 		
@@ -83,4 +91,4 @@ playerHealth=(playerHealth - dragonAttack);
 		
 	
 
-}
+}}
